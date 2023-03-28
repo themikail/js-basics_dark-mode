@@ -9,16 +9,14 @@ darkMode.addEventListener("click", () => {
 
 const lightMode = document.querySelector('[data-js="light-mode-button"]');
 lightMode.addEventListener("click", () => {
-  bodyElement.classList.add("light");
+  bodyElement.classList.remove("dark");
 });
 
 const toggleMode = document.querySelector('[data-js="toggle-button"]');
 toggleMode.addEventListener("click", () => {
   if (bodyElement.classList.contains("dark")) {
     bodyElement.classList.remove("dark");
-    bodyElement.classList.add("light");
   } else {
-    bodyElement.classList.remove("light");
     bodyElement.classList.add("dark");
   }
 });
