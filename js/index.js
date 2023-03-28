@@ -14,9 +14,5 @@ lightMode.addEventListener("click", () => {
 
 const toggleMode = document.querySelector('[data-js="toggle-button"]');
 toggleMode.addEventListener("click", () => {
-  if (bodyElement.classList.contains("dark")) {
-    bodyElement.classList.remove("dark");
-  } else {
-    bodyElement.classList.add("dark");
-  }
+  bodyElement.classList.toggle("dark");
 });
